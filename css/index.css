@@ -130,23 +130,34 @@ table {
 * {
   box-sizing: border-box;
 }
+.width-margin {
+  width: 900px;
+  margin: 50px auto;
+}
+.flex {
+  display: flex;
+}
 html,
 body {
   height: 100%;
+  background-color: pink;
 }
 .container {
-  width: 800px;
+  width: 1000px;
   margin: 50px auto;
+  background-color: white;
 }
 .container header {
-  width: 100%;
+  width: 900px;
+  margin: 50px auto;
 }
 .container header nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   color: pink;
   font-size: 1.2rem;
+  padding: 40px 0px 40px 0px;
+  font-weight: bold;
 }
 .container header img {
   width: 40%;
@@ -164,19 +175,75 @@ body {
 }
 .container header section p {
   margin: 0px 0px 30px 0px;
+  color: grey;
+  font-size: 1.2rem;
+}
+hr {
+  border: 1px dashed pink;
+  width: 900px;
+  margin: 50px auto;
+}
+body {
+  width: 900px;
+  margin: 50px auto;
 }
 body .first-section {
   display: flex;
+  font-size: 1.3rem;
+  margin: 50px 0px 40px 0px;
+  padding: 0px 0px 50px 20px;
+  line-height: 50px;
 }
 body .first-section .skills {
   width: 50%;
+  color: grey;
 }
 body .first-section .skills h3 {
   text-align: center;
+  font-size: 2rem;
+  color: pink;
+}
+body .first-section .skills ul {
+  list-style-type: square;
+  margin: 0px 0px 0px 50px;
+  font-size: 1.2rem;
 }
 body .first-section .work-experience {
   width: 50%;
+  color: grey;
 }
 body .first-section .work-experience h3 {
+  font-size: 2rem;
   text-align: center;
+  color: pink;
+}
+body .first-section .work-experience ul {
+  list-style-type: square;
+  margin: 0px 0px 0px 50px;
+  font-size: 1.2rem;
+}
+footer {
+  width: 900px;
+  margin: 50px auto;
+}
+footer .second-section {
+  color: white;
+}
+footer .second-section h3 {
+  font-size: 2rem;
+  margin: 0px 0px 30px 0px;
+}
+footer .second-section address {
+  display: flex;
+}
+footer .second-section address .contact p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+footer .second-section address .contact-info a {
+  text-decoration: none;
+  color: white;
+  font-weight: initial;
+  margin: 0px 0px 0px 80px;
+  font-size: 1.2rem;
 }

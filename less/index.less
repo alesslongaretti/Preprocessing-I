@@ -53,24 +53,44 @@ table {
     box-sizing: border-box;
 }
 
+
+@maincolor: pink;
+@secondcolor: grey;
+@titlefontsize: 2rem;
+@otherfontsize: 1.2rem;
+
+.width-margin {
+	width: 900px;
+	margin: 50px auto;
+}
+.flex {
+	display: flex;
+}
+
+
+
 html, body {
 	height: 100%;
-	;
+	background-color: @maincolor;
 }
 
 .container {
-	width: 800px;
+	width: 1000px;
 	margin: 50px auto;
+	background-color: white;
+	
 
 	header {
-		width: 100%;
+		.width-margin();
 
-		nav {
-			width: 100%;
-			display: flex;
+		nav {	
+			.flex();
 			justify-content: space-between;
-			color: pink;
+			color: @maincolor;
 			font-size: 1.2rem;
+			padding: 40px 0px 40px 0px;
+			font-weight: bold;
+			
 
 		}
 
@@ -87,10 +107,12 @@ html, body {
 			h1 {
 				font-size: 2.5rem;
 				margin: 0px 0px 20px 0px;
-				color: pink;
+				color: @maincolor;
 			}
 			p {
 				margin: 0px 0px 30px 0px;
+				color: @secondcolor;
+				font-size: @otherfontsize;
 
 			}
 		}
@@ -99,33 +121,102 @@ html, body {
 	
 }
 
-
+hr {
+	border: 1px dashed @maincolor;
+	.width-margin();
+	
+}
 
 body {
+	.width-margin();
 
 	.first-section {
-		display: flex;
+		.flex();
+		font-size: 1.3rem;
+		margin: 50px 0px 40px 0px;
+		padding: 0px 0px 50px 20px;
+		line-height: 50px;
 
 		.skills {
 			width:50%; 
-			
+			color: @secondcolor;
 
 			h3 {
 				text-align: center;
+				font-size: @titlefontsize;
+				color: @maincolor;
+			}
+			ul {
+				list-style-type: square;
+				margin: 0px 0px 0px 50px;
+				font-size: @otherfontsize;
 			}
 		}
 
 		.work-experience {
-
+			
 			width:50%;
+			color: @secondcolor;
 
 			h3 {
+				font-size: @titlefontsize;
 				text-align: center;
+				color: @maincolor;
+			}
+			ul {
+				list-style-type: square;
+				margin: 0px 0px 0px 50px;
+				font-size: @otherfontsize;
 			}
 
 
 		}
 	}
+}
+
+
+footer {
+	.width-margin();
+
+	.second-section{
+		
+		color: white;
+
+		h3 {
+			font-size: @titlefontsize;
+			margin: 0px 0px 30px 0px;
+		}
+
+		address {
+			.flex();
+
+			.contact {
+
+				p {
+					font-size: @otherfontsize;
+					font-weight: bold;
+				}
+
+			}
+
+			.contact-info {
+
+				a {
+					text-decoration: none;
+					color: white;
+					font-weight: initial;
+					margin: 0px 0px 0px 80px;
+					font-size: @otherfontsize;
+				}
+			}
+
+			
+		}
+
+			
+		
+	}
+	
 }
 
 
