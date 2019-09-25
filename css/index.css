@@ -168,3 +168,15 @@ body {
 body .first-section {
   display: flex;
 }
+body .first-section .skills {
+  width: 50%;
+}
+body .first-section .skills h3 {
+  text-align: center;
+}
+body .first-section .work-experience {
+  width: 50%;
+}
+body .first-section .work-experience h3 {
+  text-align: center;
+}
