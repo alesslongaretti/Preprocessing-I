@@ -54,14 +54,15 @@ table {
 }
 
 
+
 @maincolor: pink;
 @secondcolor: grey;
 @titlefontsize: 2rem;
 @otherfontsize: 1.2rem;
 
 .width-margin {
-	width: 900px;
-	margin: 50px auto;
+	width: 90%;
+	margin: 5vw auto;
 }
 .flex {
 	display: flex;
@@ -69,17 +70,15 @@ table {
 
 
 
-html, body {
-	height: 100%;
+html, body, footer {
 	background-color: @maincolor;
 }
 
 .container {
-	width: 1000px;
-	margin: 50px auto;
+	width: 100%;
+	margin: 5vw auto;
 	background-color: white;
 	
-
 	header {
 		.width-margin();
 
@@ -90,17 +89,15 @@ html, body {
 			font-size: 1.2rem;
 			padding: 40px 0px 40px 0px;
 			font-weight: bold;
-			
-
 		}
 
 		img {
 			width: 40%;
 			display: block;
 			margin: 0 auto;
-			padding: 60px 0px 60px 0px;
-			
+			padding: 60px 0px 60px 0px;	
 		}
+
 		section {
 			text-align: center;
 
@@ -109,23 +106,23 @@ html, body {
 				margin: 0px 0px 20px 0px;
 				color: @maincolor;
 			}
+
 			p {
 				margin: 0px 0px 30px 0px;
 				color: @secondcolor;
 				font-size: @otherfontsize;
-
+				line-height: 30px;
+			
 			}
 		}
-
 	}
-	
 }
+
 
 hr {
 	border: 1px dashed @maincolor;
-	.width-margin();
-	
 }
+
 
 body {
 	.width-margin();
@@ -133,7 +130,7 @@ body {
 	.first-section {
 		.flex();
 		font-size: 1.3rem;
-		margin: 50px 0px 40px 0px;
+		margin: 50px 0px 40px 4px;
 		padding: 0px 0px 50px 20px;
 		line-height: 50px;
 
@@ -146,6 +143,7 @@ body {
 				font-size: @titlefontsize;
 				color: @maincolor;
 			}
+
 			ul {
 				list-style-type: square;
 				margin: 0px 0px 0px 50px;
@@ -154,7 +152,6 @@ body {
 		}
 
 		.work-experience {
-			
 			width:50%;
 			color: @secondcolor;
 
@@ -163,13 +160,12 @@ body {
 				text-align: center;
 				color: @maincolor;
 			}
+
 			ul {
 				list-style-type: square;
 				margin: 0px 0px 0px 50px;
 				font-size: @otherfontsize;
 			}
-
-
 		}
 	}
 }
@@ -179,7 +175,6 @@ footer {
 	.width-margin();
 
 	.second-section{
-		
 		color: white;
 
 		h3 {
@@ -196,7 +191,6 @@ footer {
 					font-size: @otherfontsize;
 					font-weight: bold;
 				}
-
 			}
 
 			.contact-info {
@@ -209,14 +203,8 @@ footer {
 					font-size: @otherfontsize;
 				}
 			}
-
-			
 		}
-
-			
-		
 	}
-	
 }
 
 
